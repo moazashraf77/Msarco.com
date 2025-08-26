@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html>
+
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/96a3729c4c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style1.css">
+    <title>MSARCO</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+</head>
+
+<div class="whatsapp-button">
+    <a href="https://wa.me/966562276228" target="_blank" rel="noopener noreferrer">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" />
+    </a>
+</div>
+
+<body>
+
+
+   
+
+
+   <header>
+    <a href="msar co profile final.pdf" class="logo">MSARCO</a>
+    <img src="images2/Saudi_Vision_2030_logo.svg.png" alt="رؤية السعودية2030" style="height: 3em; margin-left: 20px;">
+
+    <!-- زرار الهامبرجر -->
+    <div class="menu-toggle" onclick="toggleMenu()">
+        <i class="fa fa-bars"></i>
+    </div>
+
+    <!-- القائمة -->
+    <nav class="navigation">
+        <a href="#About" data-i18n="About">About</a>
+        <a href="#Services" data-i18n="Services">Services</a>
+        <a href="#projects" data-i18n="projects">projects</a>
+        <a href="#contact" data-i18n="contact">Contact</a>
+    </nav>
+
+    <!-- تغيير اللغة -->
+    <select id="lang-select">
+        <option value="en" selected>English</option>
+        <option value="ar">العربية</option>
+    </select>
+</header>
+
+
+    <section class="main">
+        <div>
+            <h2><br><span data-i18n="Welcome">Welcome to Msar</span></h2>
+            <h3 data-i18n="SPECIALIST">SPECIALIST CONTRACTING CO</h3>
+            <a href="#projects" class="main-btn" data-i18n="View">View my work</a>
+            <div class="social-icons">
+                <div class="card2">
+                    <a class="WhatsApp" href="https://wa.me/966562276228"><i class="fab fa-whatsapp"></i></a>
+                    <a class="email" href="mailto:msarkhalifah@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+                    <a class="profail" href="msar co profile final.pdf"><img src="images2/moaz13.jpg"></a>
+                    
+                   
+
+
+
+
+                </div>
+            </div>
+    </section>
+    <section class="msar" id="About">
+        <h1 class="moaz" data-i18n="About">About</h1>
+        <div class="meta">
+            <div class="icon">
+            </div>
+
+            <div class="cards-container">
+                <!-- الكارت الأول -->
+                <div class="card80">
+                    <div class="text-area">
+                        <p id="text-short-1" data-i18n="a0">Masar Al-Mokhtas Contracting Company was established in 2008 AD continued to implement many
+                            projects under the name of an institution until 2023</p>
+                        <p id="text-full-1" style="display:none;" data-i18n="a">
+                            Msar SPECIALIST Contracting Company was established in 2008 and continued to implement many
+                            projects under the name of an institution until 2023, when the current name was finalized
+                            and it became a company, praise be to God, with the same management, engineers, supervisors,
+                            and workers. If any change occurred, it was for the better.
+
+                            We work on executing government and private contracting projects of all kinds, whether
+                            commercial, residential, recreational, or others, using specialized engineers, supervisors,
+                            and trained, skilled labor, and employing the best modern techniques and methods to provide
+                            the best living standards for the modern person in the place.
+
+                            We specialize in designing, implementing, supervising, and following up on all interior and
+                            exterior decoration and furnishing works for buildings. We conduct studies and designs to
+                            achieve the best results, suggestions, and solutions that suit the client’s needs for the
+                            intended use of the place.
+
+                            We undertake the final stages of buildings and projects, carrying out all works related to
+                            project completion, including finishing, interior and exterior decorations, and providing
+                            design plans, execution plans, and samples required by owners and consulting offices at a
+                            high standard, before starting the implementation of works according to the required
+                            schedules for each phase of the project.
+
+
+                        </p>
+                    </div>
+                    <button id="btn-more-1" data-i18n="Read">Read more</button>
+                </div>
+
+                <!-- الكارت الثاني -->
+                <div class="card80">
+                    <div class="text-area">
+                        <p id="text-short-2" data-i18n="a30">We are the best choice for your projects because...</p>
+                        <p id="text-full-2" style="display:none;" data-i18n="a1">
+                            We are the best choice for your projects because, thanks to God, we are a professional and
+                            certified team of engineers and technicians with long experience. We provide comprehensive
+                            service from A to Z: High-quality materials with a guarantee of implementation and adherence
+                            to timetables and costs. Continuous technical support and after-sales service
+                        </p>
+                    </div>
+                    <button id="btn-more-2" data-i18n="Read">Read more</button>
+                </div>
+            </div>
+
+            <script>
+                function toggleCard(shortId, fullId, btnId) {
+                    const shortText = document.getElementById(shortId);
+                    const fullText = document.getElementById(fullId);
+                    const btn = document.getElementById(btnId);
+
+                    btn.addEventListener('click', () => {
+                        if (fullText.style.display === 'none') {
+                            fullText.style.display = 'block';
+                            shortText.style.display = 'none';
+                            btn.textContent = 'Read less';
+                        } else {
+                            fullText.style.display = 'none';
+                            shortText.style.display = 'block';
+                            btn.textContent = 'Read more';
+                        }
+                    });
+                }
+
+                toggleCard('text-short-1', 'text-full-1', 'btn-more-1');
+                toggleCard('text-short-2', 'text-full-2', 'btn-more-2');
+            </script>
+            <!-- Google tag (gtag.js) -->
+                <script async src="https://www.googletagmanager.com/gtag/js?id=G-CZX55D4XTV"></script>
+            <script>
+             window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-CZX55D4XTV');
+</script>
+    </section>
+
+
+
+    <section class="cards-section">
+        <!-- كارت الأهداف -->
+        <div class="card80">
+            <h2 data-i18n="our1">Our Goals</h2>
+            <div class="text-short">
+                <ol>
+                    <li data-i18n="a2">Continuous development in our business...</li>
+                    <li data-i18n="a3">Paying attention to the finest details...</li>
+                    <li data-i18n="a4">Serious work to achieve the best results...</li>
+                </ol>
+            </div>
+            <div class="text-full" style="display:none;">
+                <ol>
+                    <li data-i18n="a2">Continuous development in our business to enhance our skills so that we can
+                        provide the best for our clients in designing, implementing, supervising and following up on
+                        projects under our slogan We design and implement what you imagine</li>
+                    <li data-i18n="a3">Paying attention to the finest details through thorough and comprehensive study
+                        of the spaces to be executed for the first time or rehabilitated again.</li>
+                    <li data-i18n="a4">Serious work to achieve the best results and solutions for the place</li>
+                    <li data-i18n="a5">Ensuring high quality in implementation</li>
+                    <li data-i18n="a6">Compliance of project execution with local and international standards</li>
+                    <li data-i18n="a7">Delivering the project on time according to the scheduled timelines for each
+                        project phase</li>
+                    <li data-i18n="a8">Reducing costs for the client while ensuring the quality of execution</li>
+                </ol>
+            </div>
+            <button class="btn-more" data-i18n="Read">Read more</button>
+        </div>
+
+        <!-- كارت الرؤية -->
+        <div class="card80">
+            <h2 data-i18n="our">Our Vision</h2>
+            <div class="text-short">
+                <p data-i18n="a11">Honesty and integrity are the foundation of diligent work, with a focus on performance improvement...</p>
+            </div>
+            <div class="text-full" style="display:none;">
+                <p data-i18n="a10">Honesty and integrity are the foundation of diligent and organized work, with a focus
+                    on improving performance to continuously provide the best solutions and results, achieving the
+                    highest forms of art in the world of living, and creating a healthy, practical, and comfortable
+                    environment for the modern human</p>
+            </div>
+             <button class="btn-more" data-i18n="Read">Read more</button>
+        </div>
+    </section>
+
+    <style>
+        .cards80-section {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+            max-width: 1000px;
+            margin: 20px auto;
+        }
+
+        .card80 {
+            flex: 1 1 calc(50% - 20px);
+            background: #fff;
+            padding: 15px;
+            border-radius: 12px;
+            box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
+            font-size: 14px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .card80:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.12);
+        }
+
+        .card80 h2 {
+            font-size: 16px;
+            margin-bottom: 10px;
+            color: #b30000;
+        }
+
+        .card80 ol {
+            padding-left: 18px;
+            line-height: 1.5;
+            margin: 0;
+        }
+
+        .card80 p {
+            line-height: 1.5;
+            margin: 0;
+        }
+
+        /* زرار Read more */
+        .card80 button {
+            margin-top: 10px;
+            padding: 6px 12px;
+            background: #b30000;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            align-self: flex-start;
+        }
+
+        .card80 button:hover {
+            background: #ff0000;
+        }
+
+        /* على الموبايل */
+        @media (max-width: 768px) {
+            .card80 {
+                flex: 1 1 100%;
+            }
+        }
+    </style>
+
+    <script>
+        const buttons = document.querySelectorAll('.btn-more');
+
+        buttons.forEach((btn, index) => {
+            btn.addEventListener('click', () => {
+                const card = btn.parentElement;
+                const shortText = card.querySelector('.text-short');
+                const fullText = card.querySelector('.text-full');
+
+                if (fullText.style.display === 'none') {
+                    fullText.style.display = 'block';
+                    shortText.style.display = 'none';
+                    btn.textContent = 'Read less';
+                } else {
+                    fullText.style.display = 'none';
+                    shortText.style.display = 'block';
+                    btn.textContent = 'Read more';
+                }
+            });
+        });
+    </script>
+
+
+
+
+
+
+
+
+
+    <section class="cards" id="Services">
+        <h2 class="title" data-i18n="Services">Services</h2>
+        <div class="contact">
+            <div class="card90">
+                <div class="icon">
+                    <i class="fa-solid fa-layer-group"></i>
+
+                </div>
+
+                <div class="info">
+                    <h3 data-i18n="INTERIOR">INTERIOR DESING</h3>
+                    <p></p>
+                </div>
+
+
+            </div>
+
+            <div class="card90">
+                <div class="icon">
+                    <i class="fa-solid fa-layer-group"></i>
+
+                </div>
+
+                <div class="info">
+                    <h3 data-i18n="DECORATION">DECORATIONS</h3>
+                    <p></p>
+                </div>
+
+
+            </div>
+
+            <div class="card90">
+                <div class="icon">
+                    <i class="fa-solid fa-layer-group"></i>
+
+                </div>
+
+                <div class="info">
+                    <h3 data-i18n="FINISHING">FINISHING</h3>
+                    <p></p>
+                </div>
+
+
+            </div>
+            <div class="card90">
+                <div class="icon">
+                    <i class="fa-solid fa-layer-group"></i>
+
+                </div>
+
+                <div class="info">
+                    <h3 data-i18n="CONCRETE">CONCRETE CONSTRUCTION</h3>
+                    <p></p>
+                </div>
+
+
+            </div>
+            <div class="card90">
+                <div class="icon">
+                    <i class="fa-solid fa-layer-group"></i>
+
+                </div>
+
+                <div class="info">
+                    <h3 data-i18n="METAL">METAL CONSTRUCTION</h3>
+                    <p></p>
+                </div>
+
+
+            </div>
+
+
+            <div class="card90">
+                <div class="icon">
+                    <i class="fa-solid fa-pen-fancy"></i>
+
+                </div>
+
+                <div class="info">
+                    <h3 data-i18n="LANDSCAPING">LANDSCAPING</h3>
+                    <p></p>
+
+                </div>
+            </div>
+
+
+
+
+            <div class="card90">
+                <div class="icon">
+                    <i class="fa-solid fa-landmark"></i>
+
+                </div>
+
+                <div class="info">
+                    <h3 data-i18n="MAINTENANCE">MAINTENANCE</h3>
+                    <p></p>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="projects" id="projects">
+        <h2 class="title" data-i18n="CARPENTRY">CARPENTRY</h2>
+        <div class="contact">
+
+            <div class="projects-card">
+                <div class="projects-image">
+                    <img src="images2/moaz26.jpeg" />
+                </div>
+
+                <div class="projects-info">
+                    <p class="projects-category"></p>
+                    <strong class="projects-title">
+                        <span data-i18n="DECORATION"> DECORATION</span>
+                        <a href="الديكورات.pdf" class="more-details">More details</a>
+
+                    </strong>
+                </div>
+
+            </div>
+
+            <div class="projects-card">
+                <div class="projects-image">
+                    <img src="images2/32.jpg" />
+                </div>
+
+                <div class="projects-info">
+                    <p class="projects-category"></p>
+                    <strong class="projects-title">
+                        <span data-i18n="Wooden"> Wooden Doors</span>
+                        <a href="أعمال الابواب الخشبية2.pdf" class="more-details">More details</a>
+
+                    </strong>
+                </div>
+
+            </div>
+
+
+            <div class="projects-card">
+                <div class="projects-image">
+                    <img src="images2/moaz20.jpg" />
+                </div>
+
+                <div class="projects-info">
+                    <p class="projects-category"></p>
+                    <strong class="projects-title">
+                        <span data-i18n="Ceiling">Wooden Ceiling Works</span>
+                        <a href="أعمال الأسقف الخشبيه 2.pdf" class="more-details">More details</a>
+                    </strong>
+                </div>
+
+            </div>
+            <div class="projects-card">
+                <div class="projects-image">
+                    <img src="images2/moaz21.jpg" />
+                </div>
+
+                <div class="projects-info">
+                    <p class="projects-category"></p>
+                    <strong class="projects-title">
+                        <span data-i18n="Kitchens"> Kitchens And Cabinets</span>
+                        <a href="أعمال الدواليب و المطابخ2.pdf" class="more-details">more details</a>
+                    </strong>
+                </div>
+
+            </div>
+            <div class="projects-card">
+                <div class="projects-image">
+                    <img src="images2/moaz22.jpg" />
+                </div>
+
+                <div class="projects-info">
+                    <p class="projects-category"></p>
+                    <strong class="projects-title">
+                        <span data-i18n="Counter">Wooden Counter</span>
+                        <a href="أعمال الكونترات الخشبية2.pdf" class="more-details">more details</a>
+                    </strong>
+                </div>
+
+
+            </div>
+            <div class="projects-card">
+                <div class="projects-image">
+                    <img src="images2/12.jpg" />
+                </div>
+
+                <div class="projects-info">
+                    <p class="projects-category"></p>
+                    <strong class="projects-title">
+                        <span data-i18n="Flooring"> Wooden Flooring</span>
+                        <a href="أعمال الأرضيات الخشبية.pdf" class="more-details">more details</a>
+                    </strong>
+                </div>
+
+
+            </div>
+    </section>
+
+    <section class="cards contact" id="contact">
+        <h2 class="title" data-i18n="Contact">Contact</h2>
+        <div class="contact">
+            <div class="card4">
+                <div class="icon">
+                    <i class="fa-solid fa-envelope"></i>
+
+                </div>
+
+                <div class="info">
+                    <h3 data-i18n="Email">Email</h3>
+                    <p>msarkhalifah@gmail.com</p>
+
+                </div>
+
+            </div>
+            <div class="card4">
+                <div class="icon">
+                    <i class="fa-solid fa-phone"></i>
+
+                </div>
+
+                <div class="info">
+                    <h3>phone</h3>
+                    <p>+966562276228</p>
+
+
+
+
+                </div>
+            </div>
+    </section>
+
+    <footer class="footer">
+
+        <p class="footer-title">copyrights@ <span data-i18n="Engineer">Engineer Ashraf</span></p>
+        <div class="social-icons">
+            <a href="https://wa.me/966562276228"><i class="fab fa-whatsapp"></i></a>
+            
+            <a href="mailto:msarkhalifah@gmail.com"><i class="fas fa-envelope-square"></i></a>
+
+        </div>
+
+        <script src="script.js"></script>
+
+       
+</script>
+
+
+
+     <script>
+  // جلب العناصر
+  const menuToggle = document.querySelector('.menu-toggle');
+  const navigation = document.querySelector('.navigation');
+
+  // عند الضغط على الزرار
+  menuToggle.addEventListener('click', () => {
+    navigation.classList.toggle('active');
+  });
+</script>
+
+
+
+    </footer>
+</body>
+
+</html>
+
+
+

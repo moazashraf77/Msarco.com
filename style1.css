@@ -1,0 +1,794 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+header{
+    background-color: #f0f0f0;
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 200px;
+   
+}
+header img:hover{
+    transform: scale(1.1);
+    transition: 0.4s ease;
+}
+
+.logo{
+    text-decoration: none;
+    color: red;
+    text-decoration: uppercase;
+    font-weight: 700;
+    font-size: 1.8em;
+    transition: 0.5s ease;
+}
+.logo:hover{
+    transform: scale(1.1);
+}
+.text-primary {
+    font-size: 15px;
+}
+
+.whatsapp-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 10000;
+    width: 60px;
+    height: 60px;
+}
+
+.whatsapp-button img {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+    
+
+
+.ol{
+    
+    background: #f9f9f9;
+    padding: 50px;
+    border-radius: 10px;
+    width: fit-content;
+}
+.msar-text{
+    margin-bottom: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 2em;
+    color: black;
+}
+
+
+.navigation a{
+    color: #3a6cf4;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 500;
+    padding-left: 30px;
+}
+.navigation a:hover{
+    color: black;
+}
+
+section {
+    padding: 100px 200px;
+}
+.main{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: url(images2/moaz25.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.main h2{
+    color: #000;
+    font-size: 2em;
+    font-weight: 500;
+}
+.main h2 span{
+    display: inline-block;
+    margin-top: 10px;
+    color: black;
+    font-size: 2em;
+    font-weight: 600;
+
+}
+.main h2 span:hover{
+    transform: scale(1.1);
+    transition: 0.7s ease;
+}
+.main h3 {
+    color: white;
+    font-size: 2em;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    
+}
+.main h3:hover{
+    transform: scale(1.1);
+    transition: 0.7s ease;
+}
+.main-btn{
+    color: #f0f0f0;
+    background-color: #3a6cf4;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 600;
+    display: inline-block;
+    padding: 0.9375em 2.1875em;
+    letter-spacing: 1px;
+    border-radius: 15px;
+    margin-bottom: 40px;
+    transition: 0.7s ease;
+}
+.main-btn:hover{
+    background-color: #0a49f6;
+    transform: scale(1.1);
+}
+
+
+.social-icons a{
+  margin: 10px;  
+  justify-content: center;
+  font-size: 2em;
+  justify-content: space-between;
+  
+}
+
+
+
+.title {
+    display: flex;
+    justify-self: center;
+    color: #3a6cf4;
+    font-size: 2.2em;
+    font-weight: 800;
+    margin-bottom: 30px;
+ 
+}
+.contact{
+    display: flex;
+    justify-self: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+}
+.card90{
+    background-color: #f0f0f0;
+    width: 15em;
+    box-shadow: 0 5px 30px rgba(1 1 1/20%);
+    border-radius: 10px;
+    padding: 25px;
+    margin: 15px;
+    transition: 0.7s ease;
+}
+.card90:hover{
+    transform: scale(1.1);
+}
+.card4{
+    background-color: #f0f0f0;
+    width: 21.25em;
+    box-shadow: 0 5px 30px rgba(1 1 1/20%);
+    border-radius: 10px;
+    padding: 25px;
+    margin: 15px;
+    transition: 0.7s ease;
+}
+.card4:hover{
+    transform: scale(1.1);
+}
+.icon{
+    color:#3a6cf4;
+    font-size: 8em;
+    text-align:center ;
+}
+.info {
+   text-align: center;
+}
+
+.info h3{
+    color: #3a6cf4;
+    font-size: 1.2em;
+    font-weight: 700;
+    margin: 10px;
+}
+.projects{
+    background-color:  #000016;
+}
+.projects.contact{
+    margin-top: 30px;
+}
+.projects-card{
+    background-color: #fff;
+    border: 1px solid #fff ;
+    height: 20em;
+    width: 10em;
+    overflow: hidden;
+    border-radius: 10px;
+    margin: 20px;
+    transition: 0.7s ease;
+}
+.projects-card:hover{
+    transform: scale(1.1);
+}
+
+.projects-image img{
+    width: 100%;
+}
+
+.projects-info{
+   padding: 1em;
+}
+.projects-category{
+    font-size: 0.8em;
+    color: #000;
+}
+.projects-title{
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-top: 10px;
+}
+.more-details{
+   text-decoration: none;
+   color: #3a6cf4;
+}
+.more-details:hover{
+    color: #601cfc;
+}
+.contact-icon{
+    font-size: 4.5em;
+}
+.contact .info h3{
+    color:#000;
+}
+.contact .info p{
+    font-size: 1.3em;
+}
+.footer{
+    background-color: #000016;
+    color: #fff;
+    padding: 2em;
+    display: flex;
+    justify-content: space-between;
+}
+.footer-title{
+    font-size: 1.3em;
+    font-weight: 600;
+}
+.footer-title span{
+    color: #3a6cf4;
+}
+.footer .social-icons a{
+    color: #fff;
+}
+
+.meta{
+    display: flex;
+    justify-self: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-size: 1em;
+}
+.meta8{
+    font-size: 4em;
+    display: flex;
+    justify-self: center;
+} 
+
+.meta6{
+    font-size: 5em;
+    display: flex;
+    justify-self: center;
+}
+.msar-card5 p{
+    font-size: 2em;
+    background-color: #fff;
+    border: 1px solid #fff ;
+    height: 15em;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+    margin: 1px;
+    transition: 0.7s ease;
+}
+.msar-card5 {
+    font-size: 2em;
+    background-color: #fff;
+    border: 1px solid #fff ;
+    height: 15em;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+    margin: 1px;
+    transition: 0.7s ease;
+}
+.msar-card5 p{
+    font-size: 2em;
+}
+
+.msar-card5 :hover{
+    transform: scale(1.1);
+}
+
+
+.meta .info p{
+    font-size: 2em;
+   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+   
+}
+
+.moaz {
+    display: flex;
+    justify-self: center;
+    color: red;
+    font-size: 2.2em;
+    font-weight: 800;
+    margin-bottom: 30px;
+    
+}
+.moaz:hover{
+    transform:scale(1.1);
+    transition: 0.7s ease;
+    
+}
+.msar-cards{
+    background-color: #fff;
+    border: 1px solid #fff ;
+    height: 10;
+    margin: 30em;
+    width: 10em;
+    overflow: hidden; 
+    border-radius: 10px;
+    margin: 20px;
+    transition: 0.7s ease;
+}
+.msar0{
+    font-size: 1.3em;
+}
+.msar-cards:hover{
+    transform: scale(1.1);
+}
+.msar7-images img{
+    width: 100%;
+}
+.msar-meta{
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-top: 10px;
+}
+.msar{
+    background-image: url(images2/moaz11.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+}
+.msar1{
+    background-color: #601cfc;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+}
+
+.msar2{
+    background-color: #601cfc;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    
+}
+.msar2 image img{
+   width: 1px;
+
+}
+
+.msar-images img{
+    width: 15em
+}
+   
+.msar2 .card{
+    background-color: #f0f0f0;
+    width: 100%;
+    border: 10px solid #3a6cf4;
+    min-height: 1em;
+    overflow: hidden;
+    position: center;
+}
+.meta2{
+    color:#000;
+    font-size: 5em;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    justify-self: center;
+
+} 
+
+.msar2-cards{
+   background-color: #fff;
+    border: 1px solid #fff ;
+    min-height: 14em;
+    width: 23em;
+    overflow: hidden;
+    border-radius: 10px;
+    margin: 20px;
+    transition: 0.7s ease;
+    height: 100%;
+}
+.msar2-cards:hover{
+    transform: scale(1.1);
+}
+.msar3-cards{
+    background-color: #fff;
+    border: 40px solid #fff ;
+    min-height: 1em;
+    width: 100%;
+    border-radius: 45px;
+    margin: 20px;
+    transition: 0.7s ease;
+    font-size: 23px;
+  
+}
+.msar3-cards:hover{
+    transform: scale(1.1);
+}
+.msar4-info img{
+    position: center;
+    width:15em;
+    justify-self: center;
+    margin: 20px;
+    border-radius: 200px;
+    background-color: red;
+}
+.msar2-cards{
+    width: 100%;
+}
+.msar2-image img{
+    width: 100%;
+}
+
+ 
+.card2 a{
+  width: fit-content;
+  height: fit-content;
+  background-color: #f0f0f0;
+  justify-content: center;
+  padding: 10px 10px;
+  gap: 20px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.055);
+  transition: 0.7s ease;
+  text-decoration: none;
+}
+.card2 :hover{
+    transform: scale(1.1);
+}
+
+.WhatsApp{
+    color: green;
+}
+.facebook{
+    color: blue;
+}
+.Email{
+    color: gray;
+}
+
+/* for all social containers*/
+.socialContainer {
+  width: 52px;
+  height: 52px;
+  background-color: rgb(44, 44, 44);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  transition-duration: 0.3s;
+}
+
+/* instagram*/
+.email:hover {
+  background-color: #601cfc;
+  transition-duration: 0.3s;
+  transform: scale(1.5);
+  border-radius: 200px;
+  font-size: small;
+}
+/* twitter*/
+.profail:hover {
+  background-color: #00acee;
+  transition-duration: 0.3s;
+  transform: scale(1.5);
+  border-radius: 200px;
+  font-size: small;
+}
+.card2 img {
+    width: 40px;  /* العرض */
+    height: auto; /* يحافظ على النسبة */
+    border-radius: 6px; /* اختيارى - لتنعيم الحواف */
+    vertical-align: middle;
+}
+.card2 img {
+    width: 100px;
+    height: px;
+    object-fit: cover; /* يخلي الصورة مظبوطة داخل المربع */
+    border-radius: 100px; /* اختيارى - لتنعيم الحواف */
+}
+/* linkdin*/
+.facebook:hover {
+  background-color: #0072b1;
+  transition-duration: 0.3s;
+  transform: scale(1.5);
+  border-radius: 15px;
+}
+/* Whatsapp*/
+.WhatsApp:hover {
+  background-color: #25d366;
+  transition-duration: 0.3s;
+  transform: scale(1.5);
+  border-radius: 200px;
+  font-size: small;
+}
+
+.social-icons:active {
+  transform: scale(0.9);
+  transition-duration: 0.3s;
+}
+
+.socialSvg {
+  width: 17px;
+}
+
+.socialSvg path {
+  fill: rgb(255, 255, 255);
+}
+
+.social-icons:hover .socialSvg {
+  animation: slide-in-top 0.3s both;
+}
+
+@keyframes slide-in-top {
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.cards-section{
+    background-image: url(images2/moaz14.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+}
+
+
+
+
+
+
+
+
+@media (max-width:1023px) {
+    header{
+        padding: 12px 20px;
+    }
+    .navigation a{
+        padding-left: 10px;
+    }
+    .title{
+        font-size: 1.8em;
+    }
+    section{
+        padding: 80px 20px;
+    }
+    .main-content h2{
+        font-size: 1em;
+    }
+    .main-content h3 {
+        font-size: 1.6em;
+    }
+    .content{
+        flex-direction: column;
+        align-items: center;
+    }
+    .msar{
+        flex-direction: column;
+        align-items: center;
+    }
+    .msar-cards{
+       width: 15em;
+    }
+    
+    
+}
+@media (max-width:641px){
+    body{
+        font-size: 12px;
+    }
+    .main-content h2{
+        font-size: 0.8em;
+    }
+    .main-content h3{
+        font-size: 1.4em;
+    }
+}
+@media(ax-width:300px){
+    body{
+        font-size: 10px;
+
+    }  
+}
+
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+ }
+}
+
+
+
+
+
+
+@media (max-width: 768px) {
+  nav a {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media (max-width: 768px) {
+  select option {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+
+
+
+@media (min-width: 768px) {
+  .cards-container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+
+
+
+.cards9-container {
+    display: grid;
+    gap: 20px;
+  }
+
+  /* على الكمبيوتر أو الشاشات الكبيرة */
+  @media (min-width: 768px) {
+    .cards-container {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  .card9 {
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: all 0.5s ease;
+    min-height: 250px; /* نفس الارتفاع */
+  }
+  
+
+
+  .card9 p {
+    transition: opacity 0.3s ease;
+  }
+
+  .card9 button {
+    margin-top: 10px;
+    padding: 8px 14px;
+    background: #b30000;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+
+  .card9 button:hover {
+    background: #ff0000;
+  }
+
+
+/* على الكمبيوتر */
+header {
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #fff;
+    position:relative;
+}
+
+header .logo {
+    font-size: 35px;
+    font-weight: bold;
+}
+
+header .vision-logo {
+    height: 50px;
+}
+
+nav.navigation {
+    display: flex;
+    gap: 20px;
+}
+
+nav.navigation a, nav.navigation select {
+    color: gray;
+    text-decoration: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.menu-toggle {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: black;
+}
+
+/* على الموبايل */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    nav.navigation {
+        display: none; /* مخفية افتراضي */
+        flex-direction: column;
+        background-color: gray;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 200px;
+        padding: 10px;
+    }
+
+    nav.navigation.active {
+        display: flex; /* تظهر عند الضغط */
+    }
+
+    nav.navigation a, nav.navigation select {
+        margin: 5px 0;
+        color: #f0f0f0;
+    }
+}
+
+
